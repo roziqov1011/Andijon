@@ -1,0 +1,174 @@
+.organizations-profil {
+    &__top {
+        display: flex;
+        padding-bottom: 50px;
+        margin-bottom: 40px;
+        width: 950px;
+        border-bottom: 1px solid #999;
+
+        img {
+            object-fit: cover;
+        }
+    }
+
+    &__top-right {
+        width: 650px;
+        padding: 40px 30px 30px 60px;
+        background-color: #F2F2FF;
+
+        h4 {
+            font-weight: 600;
+            font-size: 22.5062px;
+            line-height: 19px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 550px;
+            margin-bottom: 40px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 23px;
+            color: #4E4E4E;
+        }
+
+        a {
+            font-weight: 600;
+            font-size: 15.0042px;
+            line-height: 19px;
+            color: #0B0B92;
+        }
+    }
+
+    &__top-right-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        a {
+            font-weight: 600;
+            font-size: 22.5062px;
+            line-height: 19px;
+            color: #000000;
+        }
+    }
+
+    &__top-right-bottom-list {
+        display: flex;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        li {
+            cursor: pointer;
+        }
+
+        li+li {
+            margin-left: 25px;
+        }
+
+        a {
+            font-size: 25px;
+            color: #9E9E9E !important;
+            transition: all 0.8s ease;
+
+            &:hover {
+                color: #0B0B92 !important;
+            }
+        }
+    }
+
+    // Organizations-profil__info-list ====================
+
+    &__info-title {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 19px;
+        color: #000000;
+        margin-bottom: 40px;
+    }
+
+    &__info-list {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 40px 55px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__info-item {
+        width: 430px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999999;
+
+        div {
+            margin-bottom: 20px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 19px;
+            color: #4E4E4E;
+        }
+
+        p {
+            margin: 0;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+            color: #4E4E4E;
+        }
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .organizations-profil {
+        &__top {
+            width: 100%;
+        }
+
+        &__top-right {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .organizations-profil {
+        &__top {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+
+        &__info-item {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .organizations-profil {
+        &__top {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 250px;
+                object-fit: cover;
+            }
+        }
+
+        &__top-right {
+            padding: 35px 20px;
+        }
+
+        &__top-right-bottom {
+            a {
+                font-size: 17px;
+            }
+        }
+    }
+}

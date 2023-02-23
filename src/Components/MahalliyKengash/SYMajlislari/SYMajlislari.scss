@@ -1,0 +1,36 @@
+.sy-majlislarii {
+    span {
+        font-weight: 500;
+        font-size: 25.0007px;
+        line-height: 19px;
+        color: #14324C;
+    }
+
+    h3 {
+        font-weight: 700;
+        font-size: 30.7509px;
+        line-height: 23px;
+        color: #14324C;
+        margin-top: 25px;
+    }
+
+    p {
+        text-align: justify;
+        margin-top: 25px;
+        font-weight: 500;
+        font-size: 16.2505px;
+        line-height: 29px;
+        color: #4E4E4E;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .sy-majlislarii {
+        .sy-majlislarii__text {
+            p {
+                font-size: 14px !important;
+                line-height: normal;
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.vacancies {
+    margin-bottom: 50px;
+    &__list {
+        width: 950px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 40px;
+        width: 100%;
+        background: #F2F2FF;
+        border-radius: 3px;
+        transition: all 1s ease;
+
+        &:hover {
+            box-shadow: 0px 11.2531px 15.0042px rgba(0, 0, 0, 0.15);
+        }
+
+        ion-icon {
+            font-size: 30px;
+            color: #676767;
+        }
+    }
+
+    &__item-text {
+        margin: 0;
+        margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26px;
+        color: #042038;
+    }
+
+    &__item-link {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        color: #0B0B92;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .vacancies {
+        &__list {
+            width: 750px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vacancies {
+        &__list {
+            width: 100%;
+        }
+
+        &__item {
+            width: 100%;
+        }
+
+        &__item-text {
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .vacancies {
+
+        &__item {
+            padding: 25px;
+        }
+
+        &__item-text {
+            font-size: 16px;
+        }
+
+        &__item-link {
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .vacancies {
+
+        &__item {
+            padding: 20px;
+        }
+
+        &__item-text {
+            font-size: 14px;
+            line-height: normal;
+            margin-bottom: 5px;
+        }
+
+        &__item-link {
+            display: inline-block;
+            font-size: 12px;
+        }
+    }
+}

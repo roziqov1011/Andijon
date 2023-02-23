@@ -1,0 +1,33 @@
+.indicators {
+    margin-bottom: 50px;
+
+    &__title {
+        max-width: 600px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 25px;
+        color: #4E4E4E;
+        margin-bottom: 20px;
+    }
+
+    &__headline {
+        font-weight: 600;
+        font-size: 22.5px;
+        line-height: 27px;
+        color: #042038;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .indicators {
+        &__title {
+            font-size: 16px;
+            line-height: normal;
+        }
+
+        &__headline {
+            font-size: 18px;
+        }
+    }
+}

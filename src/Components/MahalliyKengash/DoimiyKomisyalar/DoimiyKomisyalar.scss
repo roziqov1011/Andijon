@@ -1,0 +1,234 @@
+@import "../../../Assets/Scss/Colors.scss";
+@import "../../../Assets/Scss/Styles.scss";
+
+.comissions {
+    margin-bottom: 50px;
+
+    h4 {
+        font-weight: 600 !important;
+        font-size: 24px !important;
+        line-height: 23px !important; 
+        color:  #0B0B92 !important;
+        margin-bottom: 20px !important;
+    }
+
+    &__list {
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 100px !important;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -90px;
+            top: 0px;
+            width: 1px;
+            min-height: 100%;
+            background-color: $dackBlue;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -97px;
+            width: 15px;
+            height: 15px;
+            background: url("../../../Assets/Icon/tadbir-card-oval-icon.svg") no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__item {
+        @include flexStyle(center, none, none);
+        position: relative;
+        max-width: 800px;
+        padding: 35px;
+        background: $white;
+        box-shadow: 0px 0px 7.50092px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.8s ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -90px;
+            width: 72px;
+            height: 17px;
+            background: url("../../../Assets/Icon/tadbir-card-icon.svg") no-repeat;
+            background-size: cover;
+        }
+
+        &:hover {
+            box-shadow: 0px 11.2514px 15.0018px rgba(0, 0, 0, 0.2);
+            border-radius: 3.00037px;
+        }
+
+        &:hover &::before {
+            left: -40px;
+        }
+
+        .viloyat-tarkib__item-box {
+            width: 650px;
+        }
+
+        img {
+            width: 123px;
+            height: 123px;
+            object-fit: cover;
+            margin-right: 30px;
+            border-radius: 100%;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            font-weight: 600;
+            font-size: 18.7523px;
+            line-height: 23px;
+            color: $dackBlue;
+        }
+
+        p {
+            max-width: 420px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 16px;
+        }
+
+        hr {
+            width: 100%;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            color: $darkBlue;
+            transition: all 0.7s ease;
+
+            ion-icon {
+                margin-right: 8px;
+                color: #C5C5C5;
+                transition: all 0.7s ease;
+
+            }
+
+            &:hover {
+                color: $dackBlue;
+
+                ion-icon {
+                    color: $dackBlue;
+                }
+            }
+        }
+
+        .comissions__item-link {
+            display: flex;
+            justify-content: space-between;
+            width: 480px;
+        }
+    }
+
+    &__item+&__item {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .comissions {
+        &__item {
+            &::before {
+                left: -11%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .comissions {
+        &__item {
+            @include flexStyle(start, none, column);
+
+            &::before {
+                left: -14%;
+            }
+
+            img {
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+
+            .comissions__item-box {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .comissions {
+
+        &__list {
+
+            margin-left: 0px !important;
+
+            &::before {
+                content: none;
+            }
+
+            &::after {
+                content: none;
+            }
+        }
+
+        &__item {
+            &::before {
+                content: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .comissions {
+        &__item {
+            .comissions__item-link {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .comissions {
+        &__item {
+            .comissions__item-til {
+                margin-bottom: 10px;
+            }
+        }
+
+        &__title {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .comissions {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__item {
+            padding: 20px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+}

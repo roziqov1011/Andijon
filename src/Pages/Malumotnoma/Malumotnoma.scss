@@ -1,0 +1,31 @@
+@import "../../Assets/Scss/Colors.scss";
+.Malumotnoma {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px 100px 0px;
+}
+.Malumotnoma__bar_open{
+    background-color: $dackBlue;
+    padding: 0 5px;
+    display: none;
+}
+@media only screen and (max-width: 1050px) {
+    .Malumotnoma {
+        
+        &__asside {
+            margin: 50px 0px;
+        }
+    }
+    .Malumotnoma__bar{
+        margin-left: 0px;
+        position: relative;
+    }
+    .Malumotnoma__bar_inner{
+        display: none;
+    }
+    .Malumotnoma__bar_open{
+        display: block;
+        position: absolute;
+        left: -40px;
+    }
+}

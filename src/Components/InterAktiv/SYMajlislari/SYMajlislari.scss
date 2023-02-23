@@ -1,0 +1,101 @@
+.SYMajlislari {
+    padding-top: 90px;
+}
+
+.SYMajlislari__title {
+    font-weight: 700;
+    font-size: 18.7509px;
+    line-height: 23px;
+    color: #14324C;
+}
+
+.SYMajlislari__list {
+    margin-top: 30px;
+}
+
+.SYMajlislari__subtitle {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #0B0B92;
+    margin-top: 10px;
+    display: block;
+}
+
+.SYMajlislari__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #F3FAFF;
+    margin-top: 30px;
+
+    img {
+        width: 200px;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    div {
+        max-width: 480px;
+        padding: 22px;
+
+        h3 {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 19px;
+            color: #000000;
+        }
+
+        b {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 19px;
+            color: #000000;
+        }
+
+        p {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 15px;
+            color: #4E4E4E;
+        }
+    }
+}
+
+
+
+.SYMajlislari__info {
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    li {
+        width: 427px;
+        border-bottom: 1px solid #999999;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0;
+
+        span {
+            color: #4E4E4E;
+        }
+
+        a {
+            margin-top: 20px;
+            color: #4E4E4E;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 19px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .SYMajlislari__info {
+        li {
+            width: 300px;
+        }
+    }
+}

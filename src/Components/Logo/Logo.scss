@@ -1,0 +1,45 @@
+@import "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Scss/Styles.scss";
+
+.logo {
+    @include flexStyle(center, none, column);
+
+    &__img {
+        width: 195px;
+        height: 80px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        &__img {
+            width: 150px;
+            height: 60px;
+        }
+
+        &__text {
+            font-size: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .logo {
+        &__img {
+            width: 120px;
+            height: 50px;
+        }
+
+        &__text {
+            font-size: 8px;
+        }
+    }
+}

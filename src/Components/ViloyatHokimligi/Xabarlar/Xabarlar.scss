@@ -1,0 +1,185 @@
+@import "../../../Assets/Scss/Colors.scss";
+@import "../../../Assets/Scss/Styles.scss";
+
+.vmessages-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.vmessages-card__list {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.vmessages-card__item {
+    position: relative;
+    max-width: 980px;
+    height: 220px;
+    cursor: pointer;
+    @include flexStyle(center, none, none);
+}
+
+.vmessages-card__item~.vmessages-card__item {
+    margin-top: 40px;
+}
+
+.vmessages-card__item-img {
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.vmessages-card__item-box {
+    height: 220px;
+    // @include flexStyle(start, space-between, column);
+}
+
+.vmessages-card__item-title {
+    max-width: 550px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 27px;
+    color: $dackBlue;
+    margin-bottom: 15px;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+.vmessages-card__item-desc {
+    max-width: 650px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #4E4E4E;
+}
+
+.vmessages-card__item-time {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #BABABA;
+
+    ion-icon {
+        margin-left: 5px;
+        margin-right: 4px;
+    }
+}
+
+.pogination {
+    display: flex;
+    align-items: center;
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.pogination .page-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+    // color: #fff;
+    border-radius: 60%;
+    // background-color: $dackBlue;
+}
+
+.pogination .active {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $dackBlue;
+    transition: all 0.8s ease;
+}
+
+.pogination .active:hover {
+    background-color: #BABABA;
+}
+
+
+
+@media only screen and (max-width: 810px) {
+    .vmessages-card__item {
+        height: 550px;
+        @include flexStyle(start, none, column);
+        background-color: #fff;
+
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        time {
+            position: relative;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .vmessages-card__item {
+        height: 500px;
+        flex-direction: column;
+
+        img {
+            max-height: 250px;
+            object-fit: cover;
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .vmessages-card__item {
+        height: 450px;
+        justify-content: start;
+
+        h3 {
+            line-height: normal;
+        }
+
+        img {
+            max-height: 150px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .vmessages-card__item {
+        height: 400px;
+        justify-content: start;
+
+        &-box {
+            h3 {
+                font-size: 16px;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+    
+            p {
+                font-size: 12px;
+                line-height: normal;
+                margin-bottom: 10px !important;
+            }
+    
+            img {
+                max-height: 150px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

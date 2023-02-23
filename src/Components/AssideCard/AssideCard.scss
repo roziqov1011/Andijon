@@ -1,0 +1,26 @@
+.asside-card {
+    width: 330px;
+    height: 300px;
+    padding: 185px 30px 30px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(11, 11, 146, 0.2);
+    background: url("../../Assets/Img/yashil-makon.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &:hover {
+        div {
+            color:  #0B0B92;
+        }
+    }
+
+    &__title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        line-height: normal;
+        margin-bottom: 15px;
+    transition: all 0.8s ease;
+
+    }
+}

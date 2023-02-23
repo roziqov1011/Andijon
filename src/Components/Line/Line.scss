@@ -1,0 +1,104 @@
+@import "../../Assets/Scss/Colors.scss";
+
+.line-box {
+    position: relative;
+    margin-top: 15px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        width: 110px;
+        height: 4px;
+        background-color: #090998;
+    }
+
+    hr {
+        color: #808080;
+    }
+}
+
+p {
+    font-size: 20px;
+    margin: 0 !important;
+    font-weight: 600;
+    font-size: 22.5062px;
+    line-height: 27px;
+    color: #042038;
+}
+
+.line__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.line__inner {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .line__fuqoro {
+        background: #F2F2FF;
+        border-radius: 3.7px;
+        border: none;
+        padding: 0px 30px;
+        height: 51px;
+    }
+
+    .line__yagona {
+        margin-left: 10px;
+        height: 51px;
+        background: #0B0B92;
+        border-radius: 3.7px;
+        color: white;
+        padding: 0px 24px;
+        border: none;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .line__inner {
+        flex-direction: column;
+        align-items: flex-end;
+
+
+        .line__fuqoro {
+            height: 40px;
+            padding: 0px 10px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .line__yagona {
+            height: 40px;
+            padding: 0px 10px;
+            font-size: 12px;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .line-box  {
+        p {
+            font-size: 18px;
+        }
+
+        .line__inner {   
+            display: none; 
+            .line__fuqoro {
+                height: 30px;
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+    
+            .line__yagona {
+                height: 30px;
+                font-size: 10px;
+            }
+        }
+    } 
+}

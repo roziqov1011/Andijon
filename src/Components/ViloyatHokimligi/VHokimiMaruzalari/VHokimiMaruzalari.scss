@@ -1,0 +1,196 @@
+.vhmaruzalari-card {
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 50px;
+    }
+
+    &__item {
+        position: relative;
+        width: 430px;
+        height: 460px;
+        transition: all 0.8s;
+        cursor: pointer;
+        background: #F2F2FF;
+
+        img {
+            object-fit: cover;
+            width: 430px;
+            height: 250px;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15%;
+            left: 40%;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            transform: scale(0.8);
+            background: url("../../../Assets/Icon/play.svg") no-repeat;
+        }
+
+        &:hover {
+            background: #0B0B92;
+
+            &::before {
+                transform: scale(1);
+                transition: all 1s ease;
+            }
+
+            p {
+                transition: all 0.8s;
+                color: #fff;
+            }
+        }
+    }
+
+    &__item-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 35px 20px;
+        height: 230px;
+
+        p {
+            font-weight: 500;
+            font-size: 18.75px;
+            line-height: 23px;
+            color: #414141;
+            margin-bottom: 50px;
+        }
+
+        time {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            color: #969696;
+
+            ion-icon {
+                margin-right: 5px;
+            }
+        }
+    }
+
+    &__center {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.fancybox__slide.has-html5video .fancybox__content {
+    color: transparent !important;
+    // background-color: transparent !important;
+    outline: none !important;
+    border: none !important;
+}
+
+@media only screen and (max-width: 945px) {
+    .vhmaruzalari-card {
+
+        &__list {
+            grid-gap: 30px;
+        }
+
+        &__item {
+            width: 250px;
+            height: 320px;
+
+            img {
+                width: 250px;
+                height: 150px;
+            }
+
+            &::before {
+                width: 60px;
+                height: 60px;
+                // top: 30%; 
+                // right: 50%;
+                background-size: cover;
+            }
+        }
+
+        &__item-box {
+            padding: 20px;
+            height: 170px;
+
+            p {
+                font-size: 14px;
+                line-height: normal;
+            }
+
+            time {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vhmaruzalari-card {
+        &__item {
+            display: flex;
+            position: relative;
+            height: auto;
+            width: 100%;
+            
+            &:hover {
+                &::before {
+                    transform: translate(80%, 80%);
+                }
+            }
+
+
+            img {
+                width: 200px;
+                height: auto;
+            }
+
+            &::before {
+                width: 50px;
+                height: 50px;
+                top: 10%;
+                left: 0;
+                transform: translate(140%, 80%);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .vhmaruzalari-card {
+        &__item {
+            height: 150px;
+
+            img {
+                width: 130px;
+                height: auto;
+            }
+
+            &::before {
+                width: 50px;
+                height: 50px;
+                top: 10%;
+                left: 0;
+                transform: translate(80%, 80%);
+            }
+        }
+
+        &__item-box {
+            padding: 10px;
+            height: 150px;
+
+            p {
+                font-size: 12px;
+            }
+        }
+    }
+}

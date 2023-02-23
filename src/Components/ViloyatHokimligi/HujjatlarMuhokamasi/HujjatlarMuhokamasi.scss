@@ -1,0 +1,139 @@
+@import "../../../Assets/Scss/Colors.scss";
+@import "../../../Assets/Scss/Styles.scss";
+
+.doc-discussions {
+    &__list {
+        position: relative;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-left: 100px !important;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -90px;
+            top: 0px;
+            width: 1px;
+            min-height: 100%;
+            background-color: $dackBlue;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: -6px;
+            left: -97px;
+            width: 15px;
+            height: 15px;
+            background: url("../../../Assets/Icon/tadbir-card-oval-icon.svg") no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__item {
+        @include flexStyle(start, space-between, none);
+        flex-direction: column;
+        position: relative;
+        width: 800px;
+        padding: 35px;
+        background: $white;
+        box-shadow: 0px 0px 7.50092px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        cursor: pointer;
+        transition: all 0.8s ease;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: -90px;
+            width: 72px;
+            height: 17px;
+            background: url("../../../Assets/Icon/tadbir-card-icon.svg") no-repeat;
+            background-size: cover;
+        }
+
+        &:hover {
+            box-shadow: 0px 11.2514px 15.0018px rgba(0, 0, 0, 0.2);
+            border-radius: 3.00037px;
+
+            p {
+                color: #0B0B92;
+            }
+        }
+
+        &:hover &::before {
+            left: -40px;
+        }
+    }
+
+    &__item+&__item {
+        margin-top: 50px;
+    }
+
+    &__doc-title {
+        margin: 0;
+        max-width: 580px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 23px;
+        color: #042038;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        color: #0B0B92;
+        transition: all 0.8s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+
+        &:active {
+            opacity: 0.6;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .doc-discussions {
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .doc-discussions {
+        &__item {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &__link {
+            min-width: 110px;
+            font-size: 14px;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .doc-discussions {
+
+        &__item {
+            padding: 20px;
+        }
+
+        &__doc-title {
+            font-size: 12px;
+            max-width: 100%;
+        }
+
+        &__link {
+            padding: 6px 0px;
+            min-width: 90px;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.parks {
+    margin-bottom: 50px;
+    &__list {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__item {
+        padding: 30px 25px;
+        width: 950px;
+        border-left: 4px solid transparent;
+        border-bottom: 2px solid #cacaca;
+        transition: all 0.8s ease;
+
+        &:hover {
+            border-left: 4px solid #0B0B92;
+            border-bottom: 2px solid transparent;
+            box-shadow: 0px 11.25px 15px rgba(0, 0, 0, 0.2);
+
+            h5 {
+                color: #0B0B92;
+            }
+        }
+    }
+
+    &__item ~ &__item {
+        margin-top: 30px;
+    }
+
+    &__item-title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+        color: #0B0B92;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .parks {
+        &__item {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .parks {
+        &__item-title {
+            font-size: 18px;
+        }
+    }
+}

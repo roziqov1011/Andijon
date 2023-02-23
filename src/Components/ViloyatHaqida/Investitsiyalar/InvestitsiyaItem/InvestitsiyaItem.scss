@@ -1,0 +1,35 @@
+@import "../../../../Assets/Scss/Styles.scss";
+
+.investments-item {
+    margin-bottom: 50px;
+
+    &__title {
+        @include h3Title();
+        margin-bottom: 30px;
+    }
+
+    &__img {
+        width: 650px;
+        height: 390px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .investments-item {
+        &__img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .investments-item {
+        &__title {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }
+}

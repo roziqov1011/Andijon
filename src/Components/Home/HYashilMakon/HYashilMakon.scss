@@ -1,0 +1,87 @@
+@import "../../../Assets/Scss/Colors.scss";
+@import "../../../Assets/Scss/Styles.scss";
+
+.hyashil {
+    width: 100%;
+    height: 310px;
+    padding: 30px 40px;
+    background: url("../../../Assets/Img/yashil-makon.jpg") no-repeat;
+    background-size: cover;
+    background-position: -1px 0;
+    margin-bottom: 80px;
+    border-radius: 10px;
+
+    &__box {
+        img {
+            margin-bottom: 25px;
+        }
+
+        p {
+            max-width: 240px;
+            font-weight: 500;
+            font-size: 18.7578px;
+            line-height: 23px;
+            color: $white;
+            padding-left: 40px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 15px 35px;
+            margin-top: 30px;
+            margin-left: 40px;
+            font-weight: 500;
+            font-size: 15.0063px;
+            line-height: 18px;
+            color: $white;
+            background: #8EC838;
+            border-radius: 10px;
+            border: none;
+            transition: all 0.5s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            &:active {
+                opacity: 0.6;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .hyashil {
+        padding: 30px 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .hyashil {
+        height: 200px;
+        padding: 15px;
+        border-radius: 10px;
+
+
+        &__box {
+
+            img {
+                width: 100px;
+
+            }
+
+            p {
+                font-size: 14px;
+                padding-left: 0px;
+            }
+
+            a {
+                padding: 10px 25px;
+                margin-top: 30px;
+                margin-left: 0px;
+                font-size: 12px;
+                line-height: normal;
+            }
+        }
+    }
+}

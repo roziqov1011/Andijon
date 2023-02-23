@@ -1,0 +1,138 @@
+@import "../../../Assets/Scss/Colors.scss";
+@import "../../../Assets/Scss/Styles.scss";
+
+.partnerships {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__list {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__item {
+        max-width: 980px;
+        height: 220px;
+        cursor: pointer;
+        @include flexStyle(center, none, none);
+    }
+
+    &__item~&__item {
+        margin-top: 40px;
+    }
+
+    &__item-img {
+        margin-right: 20px;
+    }
+
+    &__item-box {
+        height: 220px;
+        @include flexStyle(start, space-between, column);
+    }
+
+    &__item-title {
+        max-width: 550px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 27px;
+        color: $dackBlue;
+        margin-bottom: 10px;
+
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+
+    &__item-desc {
+        margin-bottom: 24px;
+        max-width: 650px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #4E4E4E;
+    }
+
+    &__item-time {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #BABABA;
+
+        ion-icon {
+            margin-left: 5px;
+            margin-right: 4px;
+        }
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    .partnerships {
+        &__item {
+            height: 550px;
+            @include flexStyle(start, space-between, column);
+            background-color: #fff;
+
+            img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                margin-right: 0px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .partnerships {
+        &__item {
+            height: 500px;
+            @include flexStyle(start, space-between, column);
+
+            img {
+                max-height: 250px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 440px) {
+    .partnerships {
+        &__item {
+            height: 450px;
+            justify-content: start;
+
+            h3 {
+                line-height: normal;
+            }
+
+            img {
+                max-height: 150px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .partnerships {
+        &__item {
+            height: 450px;
+            justify-content: start;
+    
+            h3 {
+                font-size: 18px;
+                line-height: normal;
+            }
+    
+            img {
+                max-height: 150px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.DavlatRamzlari{
+    .ozgarish{
+
+    }
+}
+.DavlatRamzlari__list {
+    list-style-type: none;
+    padding: 0;
+}
+.DavlatRamzlari__item {
+    h3 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #14324C;
+        margin: 40px 0;
+    }
+
+    div {
+        display: flex;
+
+        span {
+            text-align: justify;
+            padding: 0 20px;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 30px;
+            color: #4E4E4E;
+
+        }
+
+        img {
+            max-width: 420px;
+            max-height: 279px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 25px;
+        color: #4E4E4E;
+        text-align: justify;
+        margin-top: 27px;
+        padding-right: 20px;
+    }
+}
+
+

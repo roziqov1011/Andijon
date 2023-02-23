@@ -1,0 +1,102 @@
+.deputats__main {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000;
+    padding-bottom: 30px;
+
+    img {
+        width: 200px;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    div {
+        padding: 0 14px;
+    }
+
+    h3 {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 27px;
+        color: #042038;
+        margin-bottom: 14px;
+
+    }
+
+    b {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 18px;
+        color: #042038;
+    }
+
+    p {
+        margin-top: 14px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: #4E4E4E;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 14px;
+                color: #042038;
+            }
+        }
+    }
+}
+
+.deputats__biografiya {
+    margin-top: 30px;
+
+    h2 {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 23px;
+        color: #14324C;
+    }
+
+    span {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 14px;
+        color: #010910;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #454545;
+        text-align: justify;
+    }
+}
+
+.deputats__mehnatfaoliyati{
+    margin-top: 30px;
+    h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 23px;
+        color: #14324C;
+    }
+    p{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #454545;
+        text-align: justify;
+    }
+}

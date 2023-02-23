@@ -1,0 +1,157 @@
+@import "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Scss/Styles.scss";
+
+.navbar {
+    padding: 0px !important;
+
+    &__list {
+        width: 1060px;
+        @include flexStyle(center, space-between, none);
+    }
+
+    &__item {
+        position: relative;
+
+        ion-icon {
+            color: #fff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        &:hover {
+            .navbar__drob {
+                display: flex;
+
+                ul {
+                    li {
+                        animation: fadeInDown;
+                        animation-duration: 1s;
+                    }
+                }
+            }
+        }
+    }
+
+    &__item:nth-child(3) {
+        .navbar__drob {
+            min-width: 670px;
+        }
+    }
+
+    &__item:nth-child(4) {
+        .navbar__drob {
+            min-width: 370px;
+        }
+    }
+
+    &__item:nth-child(5) {
+        .navbar__drob {
+            min-width: 250px;
+        }
+    }
+
+    &__item:nth-child(6) {
+        .navbar__drob {
+            min-width: 350px;
+        }
+    }
+
+    &__item:nth-child(7) {
+        .navbar__drob {
+            min-width: 300px;
+            right: -200px;
+        }
+    }
+
+    &__drob {
+        display: none;
+        position: absolute;
+        top: 23px;
+        padding: 0px !important;
+        overflow: hidden;
+        min-width: 1050px;
+        min-height: 220px;
+        padding: 35px 20px !important;
+        background: rgba(11, 11, 146, 0.8);
+        backdrop-filter: blur(9.375px);
+        border: 5px solid transparent;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+
+        &::before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            content: "";
+            width: 1050px;
+            height: 330px;
+            opacity: 0.4;
+            background: url("../../Assets/Svg/drob-bg-patterin.svg") no-repeat;
+            background-size: cover;
+            z-index: -1;
+        }
+
+        ul~ul {
+            margin-left: 50px !important;
+        }
+
+        li~li {
+            margin-top: 10px;
+        }
+
+        li {
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .navbar__drob-link {
+            color: #fff;
+            z-index: 11;
+        }
+    }
+
+    &__link {
+        padding-bottom: 2px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+
+    &__link:hover {
+        transition: all 0.5s ease;
+        border-bottom: 1px solid #fff;
+    }
+
+    input[type=text] {
+        position: relative;
+        padding: 15px 15px;
+        width: 20px;
+        height: 20px;
+        color: #525252;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 2px;
+        border: none;
+        border-radius: 5px;
+        background-color: transparent;
+        background: url("../../Assets/Icon/search-icon.svg") no-repeat;
+        background-size: contain;
+        transition: width 0.4s ease;
+        outline: none;
+        cursor: pointer;
+
+        &:focus {
+            width: 140px;
+            background-color: #fff;
+        }
+    }
+
+    ion-icon {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+    }
+}

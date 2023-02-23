@@ -1,0 +1,106 @@
+@import "../../../Assets/Scss/Styles.scss";
+
+.buildings {
+    margin-bottom: 50px;
+    &__title {
+        @include h3Title();
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        @include h3SubTitle();
+        max-width: 770px;
+    }
+
+    &__subtitle {
+        max-width: 350px;
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #042038;
+    }
+
+    .buildings__accor-item {
+        padding: 40px 0px !important;
+        border-radius: 0px !important;
+        border-bottom: 1px solid #cacaca !important;
+        padding-left: 0px !important;
+    }
+
+    .buildings__accor-body {
+        padding: 20px 0px !important;
+        color: #000 !important;
+    }
+
+    .accordion-button  {
+        padding: 0px !important;
+        font-weight: 700;
+        font-size: 22.5px;
+        line-height: 27px;
+        color: #042038 !important;
+        
+        &::after {
+            background: url("../../../Assets/Svg/vector-icon-clos-bottom.svg") !important;
+            background-size: contain !important;
+            background-repeat: no-repeat !important;
+            background-position: center center !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .buildings {
+        width: 100%;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        .accordion-button  {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .buildings {
+
+        &__desc {
+            font-size: 14px;
+        }
+
+        .buildings__accor-item {
+            padding: 30px 0px !important;
+        }
+
+        .accordion-button  {
+            font-size: 16px;
+
+            &::after {
+                background: url("../../../Assets/Svg/vector-icon-clos-bottom.svg") !important;
+                background-size: 15px !important;
+                background-repeat: no-repeat !important;
+                background-position: center center !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .universities {
+
+        .universities__accor-item {
+            padding: 20px 0px !important;
+        }
+
+        .universities__accor-body {
+            padding: 20px 0px 0px 0px !important;
+            color: #000 !important;
+        }    
+
+        .accordion-button  {
+            font-size: 14px;
+        }
+    }
+}

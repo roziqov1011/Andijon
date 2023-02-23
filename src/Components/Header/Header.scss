@@ -1,0 +1,296 @@
+@import "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Scss/Styles.scss";
+@import "~bootstrap/scss/bootstrap";
+
+#header__home {
+    top: 0px;
+    padding: 30px 0px;
+    background: linear-gradient(180deg, #08084A 0%, #00005A 100%) !important;
+    // background: radial-gradient(37.57% 158.69% at 63.71% 50.06%, #030375 0%, #304572 0.01%, #162441 100%);
+}
+
+.header-none.header {
+    display: none;
+}
+
+.header {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    padding: 30px 0px 10px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 0.8s ease;
+    z-index: 100;
+
+    a {
+        text-decoration: none !important;
+    }
+
+    ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__wrapper {
+        @include flexStyle(center, space-between, none);
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__nav-box {
+        display: flex;
+    }
+
+    &__menu-btn {
+        display: none;
+        border: none;
+        background-color: transparent;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        span {
+            width: 55px;
+            height: 5px;
+            border-radius: 10px;
+            background-color: $white;
+        }
+
+        span:nth-child(1) {
+            width: 35px;
+        }
+
+        span:nth-child(3) {
+            width: 45px;
+        }
+
+        span+span {
+            margin-top: 10px;
+        }
+    }
+
+    &__input-box {
+        // width: 100pxz;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__nav-menu-input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    &__nav-menu-btn {
+        position: absolute;
+        top: 8px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        border: none;
+        background: transparent;
+
+        ion-icon {
+            color: #00005A;
+            font-size: 30px;
+        }
+    }
+
+    &__nav-dom-link {
+        color: $white;
+    }
+
+    &__menu-nav-lan {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0px;
+
+        button {
+            padding: 10px 13px;
+            font-size: 18px;
+            color: $white;
+            border: none;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+
+        button~button {
+            margin-left: 20px;
+        }
+
+        .header__menu-nav-btn.activ {
+            background-color: #ffffff61;
+        }
+    }
+
+    &__menu-nav-top {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px 20px 20px;
+
+        .header__menu-top-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border: 1px solid $white;
+            border-radius: 10px;
+            cursor: pointer;
+
+            ion-icon {
+                color: $white;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.offcanvas {
+    color: $white;
+    background: linear-gradient(180deg, #08084A 0%, #00005A 100%) !important;
+
+    .btn-close {
+        margin-right: 10px;
+        background: url("../../Assets/Icon/clos-icon.svg") no-repeat;
+        background-size: 30px;
+        opacity: 1;
+    }
+
+    .offcanvas-body {
+        display: flex;
+        flex-direction: column !important;
+    }
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    display: none;
+}
+
+.accordion-item {
+    color: #fff;
+    border: none;
+    background-color: transparent !important;
+
+    .accordion-button {
+        color: #fff !important;
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .accordion-body {
+        padding-left: 50px !important;
+    }
+
+    .accordion-button::after {
+        background: url("../../Assets/Icon/acardion-icon.svg") !important;
+        background-repeat: no-repeat !important;
+        background-size: contain !important;
+    }
+}
+
+.accordion-item+.accordion-item {
+    margin-top: 15px;
+}
+
+
+.header.activ {
+    padding: 30px 0px;
+    background: linear-gradient(180deg, #08084A 0%, #00005A 100%);
+    background: #08084A;
+    border: transparent;
+    transition: background 0.4s ease-out;
+    z-index: 1000;
+}
+
+
+.header__mobile__lang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        border: none;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        color: #fff;
+        margin: 0 10px;
+        font-weight: bold;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.226);
+        }
+    }
+
+    .mobile__lang__active {
+        background-color: rgba(255, 255, 255, 0.226);
+    }
+}
+
+// Responsiv Width 1250px
+
+@media only screen and (max-width: 1275px) {
+    .header {
+        &__box {
+            display: none;
+        }
+
+        &__menu-btn {
+            display: flex;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header {
+        // padding: 35px 10px;
+
+        &__menu-btn {
+            span {
+                width: 40px !important;
+                height: 3px;
+            }
+        }
+    }
+
+    .header.activ {
+        padding: 20px 0px;
+        background: linear-gradient(180deg, #08084A 0%, #00005A 100%);
+    }
+
+    #header__home {
+        padding: 20px 0px;
+    }
+}
+
+
+@media only screen and (max-width: 368px) {
+    .header {
+        padding: 20px 0px;
+
+        &__menu-btn {
+            span {
+                width: 30px !important;
+                height: 3px;
+            }
+        }
+    }
+
+    .header.activ {
+        padding: 10px 0px;
+        background: linear-gradient(180deg, #08084A 0%, #00005A 100%);
+        transition: all 0.8s ease;
+    }
+}

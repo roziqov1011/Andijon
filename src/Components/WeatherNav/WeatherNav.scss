@@ -1,0 +1,27 @@
+@import "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Scss/Styles.scss";
+
+.weather-nav {
+    ul {
+        display: flex;
+    }
+
+    li {
+
+        @include flexStyle(center, none, none);
+        margin-right: 5px;
+
+        img {
+            width: 40px;
+            height: 40px;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 11px;
+            color: #fff;
+        }
+    }
+}

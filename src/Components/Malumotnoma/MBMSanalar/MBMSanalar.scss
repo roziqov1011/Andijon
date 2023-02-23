@@ -1,0 +1,16 @@
+.MBMSanalar {
+    margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 368px) {
+    .MBMSanalar {
+
+        strong {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

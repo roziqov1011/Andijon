@@ -1,0 +1,20 @@
+.Konstitutsiya {
+    h3 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #14324C;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    .Konstitutsiya {
+        strong {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.local-page {
+    &__title {
+        max-width: 350px;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        font-weight: 600;
+        font-size: 22.5062px;
+        line-height: 27px;
+        color: #14324C;
+        border-bottom: 1px solid #9999;
+    }
+
+    &__box {
+        margin-top: 45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .local-page {
+        &__title {
+            font-size: 18px;
+        }
+    }
+}

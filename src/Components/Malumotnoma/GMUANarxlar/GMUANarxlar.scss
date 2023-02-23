@@ -1,0 +1,30 @@
+.GMUANarxlar {
+    h2 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 30px;
+        color: #14324C;
+    }
+    i{
+        display: block;
+        margin-top: 80px;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
+}
+
+@media only screen and (max-width: 368px) {
+    .GMUANarxlar {
+
+        strong {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

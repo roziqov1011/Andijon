@@ -1,0 +1,77 @@
+@import "../../Assets/Scss/Colors.scss";
+@import "../../Assets/Scss/Styles.scss";
+
+.asside-form {
+    display: none;
+    padding: 30px 50px;
+    width: 425px;
+    min-height: 270px;
+    background: $white;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 3.75px;
+
+    .form-control {
+        border-radius: 3.75px 0px 0px 3.75px !important;
+    }
+
+    &__ok-btn {
+        color: $white;
+        border-color: $dackBlue;
+        background-color: $dackBlue !important;
+
+        &:hover {
+            background-color: $btnHover !important;
+        }
+    }
+
+    &__radio-box {
+        @include flexStyle(center, space-between, none);
+        margin: 40px 0px;
+    }
+
+    &__btn {
+        @include assideBtn();
+
+        &:hover {
+            background-color: $btnHover !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .asside-form {
+        padding: 30px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .asside-form {
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+
+        &__btn {
+            padding: 8px 0px;
+            font-size: 14px;
+        }
+
+        .form-check-label {
+            font-size: 14px;
+        }
+
+        
+    }
+}
+
+// @media only screen and (max-width: 368px) {
+//     .asside-form {
+//         padding: 30px;
+//         width: 325px;
+
+//         button {
+//             font-size: 16px;
+//         }
+//     }
+// }

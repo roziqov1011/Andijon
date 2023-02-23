@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "~bootstrap/scss/bootstrap";
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    // filter: grayscale(100%);
+}
+
+.grayscale50 {
+    filter: grayscale(100%);
+}
+
+.grayscale100 {
+    filter: grayscale(100%) invert(100%);
+}
+
+body {
+    font-family: "Montserrat";
+    
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.App__inner{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #00005A;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none !important;
+}
+
+img {
+    object-fit: cover;
+}
+
+// REACT SELECT CUSTOP STYLE
+
+.css-1s2u09g-control {
+    width: 115px !important;
+    height: 15px !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 30px !important;
+    background-color: transparent !important;
+}
+
+.css-1pahdxg-control {
+    width: 115px !important;
+    height: 15px !important;
+    border: 1px solid #FFFFFF !important;
+    border-radius: 30px !important;
+    background-color: transparent !important;
+}
+
+.css-14el2xx-placeholder {
+    font-size: 12px !important;
+    color: #fff !important;
+}
+
+.css-qc6sy-singleValue {
+    font-size: 12px !important;
+    color: #fff !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    h1 {
+        // TODO
+    }
+
+    h2 {
+        // font-size: 24px !important;
+        // line-height: normal !important;
+    }
+
+    h3 {
+        // font-size: 22px !important;
+        // line-height: normal !important;
+    }
+
+    h4 {
+        // font-size: 18px !important;
+        // line-height: normal !important;
+    }
+
+    // h5 {
+    //     font-size: 16px !important;
+    //     line-height: normal !important;
+    // }
+
+    p {
+        font-size: 16px !important;
+        line-height: normal !important;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+    h3 {
+        font-size: 18px !important;
+        line-height: normal !important;
+    }
+
+    p {
+        font-size: 14px !important;
+        line-height: normal !important;
+    }
+}

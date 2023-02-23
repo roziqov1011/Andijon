@@ -1,0 +1,29 @@
+.fuqorolar__inner {
+    h2 {
+        font-weight: 700;
+        font-size: 18.7px;
+        line-height: 23px;
+        color: #14324C;
+    }
+
+    .FuqarolarUchun__link {
+        border: none;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 27px 0;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #676767;
+        padding: 27px 41px;
+        background: #F2F2FF;
+        border-radius: 3px;
+        position: relative;
+        &::after{
+            content: '>';
+            position: absolute;
+            right: 027px;
+        }
+    }
+}

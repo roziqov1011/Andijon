@@ -1,0 +1,166 @@
+.hokimlar-profil {
+    padding-bottom: 100px;
+
+    &__content {
+        display: flex;
+    }
+
+    &__content-img {
+        width: 350px;
+        height: 450px;
+        object-fit: cover;
+        margin-right: 40px;
+        margin-bottom: 70px;
+    }
+
+    &__content-box {
+        max-width: 1050px;
+        margin-bottom: 70px;
+    }
+
+    &__content-box-name {
+        font-weight: 700;
+        font-size: 37.5px;
+        line-height: 46px;
+        color: #14324C;
+        margin-bottom: 14px;
+        max-width: 500px;
+    }
+
+    &__content-box-des {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #4B647A;
+        margin-bottom: 20px;
+    }
+
+    &__content-box-info {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 18px;
+        color: #4E4E4E;
+    }
+
+    &__main-list {
+        display: flex;
+        flex-wrap: wrap;
+        grid-gap: 43px;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__main-item {
+        position: relative;
+        width: 200px;
+        height: 400px;
+        cursor: pointer;
+        object-fit: cover;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 15px;
+            background: url("../../../Assets/Svg/hokimlar-vector.svg") no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__main-img {
+        width: 200px;
+        height: 250px;
+        margin-bottom: 15px;
+    }
+
+    &__main-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+        color: #14324C;
+        margin-bottom: 30px;
+    }
+
+    &__main-district {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 14px;
+        color: #818181;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hokimlar-profil {
+        &__content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__content-img {
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+        &__content-box {
+            margin-bottom: 40px;
+        }
+
+        &__content-box-name {
+            max-width: 100%;
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 5px;
+        }
+    
+        &__content-box-des {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 467px) {
+    .hokimlar-profil {
+
+        &__main-list {
+            grid-gap: 60px 0px;
+            justify-content: center;
+        }
+
+        &__main-item {
+            width: 100%;
+            height: 450px;
+            margin: 0 auto;
+
+            &::before {
+                height: 30px;
+            }
+        }
+
+        &__main-img {
+            width: 100%;
+        height: 300px;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 368px) {
+    .hokimlar-profil {
+        &__content-img {
+            height: 300px;
+        }
+
+        &__content-box-name {
+            font-size: 20px;
+        }
+    
+        &__content-box-des {
+            font-size: 16px;
+        }
+    }
+}

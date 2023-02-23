@@ -1,0 +1,58 @@
+@import '../../../Assets/Scss/Colors.scss';
+
+.TEAHTekshirish {
+    h3 {
+        font-weight: 700;
+        font-size: 18.7509px;
+        line-height: 23px;
+        color: $darkBlue;
+    }
+}
+
+.TEAHTekshirish__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        margin-right: 22px;
+
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+
+    input {
+        border: 0.75px solid #C4C4C4;
+        border-radius: 3.00014px;
+        padding: 17px 0;
+    }
+
+    button {
+        background: $dackBlue;
+        box-shadow: 0px 7.5px 7.5px rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+        padding: 17px 65px;
+        color: white;
+        border: none;
+    }
+}
+
+.TEAHTekshirish__btn {
+    margin-top: 34px;
+    border: 0.7px solid #C4C4C4;
+    border-radius: 3px;
+    padding: 18px 40px;
+    background-color: transparent;
+    margin-right: 22px;
+    color: black;
+    &:hover{
+        transition: all ease 0.3s;
+        border: 0.7px solid transparent;
+        box-shadow: 0px 7.50035px 11.2505px rgba(0, 0, 0, 0.1);
+        color: $dackBlue;
+    }
+}

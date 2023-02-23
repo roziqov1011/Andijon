@@ -1,0 +1,31 @@
+.address {
+    &__map {
+        margin-top: 100px;
+        width: 950px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #042038;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .address {
+        &__map {
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .address {
+        &__title {
+            font-size: 18px;
+            line-height: 20px;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+@import "../../Assets/Scss/Colors.scss";
+.VHaqida {
+      display: flex;
+      justify-content: space-between;
+      margin: 50px 0px 100px 0px; 
+}
+.VHaqida__bar_open{
+      background-color: $dackBlue;
+      padding: 0 5px;
+      display: none;
+  }
+@media only screen and (max-width: 1360px) {
+      .VHaqida {
+
+
+            &__asside {
+                  margin: 50px 0px;
+            }
+      }
+      .VHaqida__bar{
+            margin-left: 0px;
+            position: relative;
+        }
+        .VHaqida__bar_inner{
+            display: none;
+        }
+        .VHaqida__bar_open{
+            display: block;
+            position: absolute;
+            left: -40px;
+        }
+}

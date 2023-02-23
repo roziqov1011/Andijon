@@ -1,0 +1,118 @@
+.vh-organizations {
+
+    &__list {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 30px 0px;
+        border-bottom: 1px solid #999999;
+        cursor: pointer;
+        transition: all 0.8s ease;
+
+        &:hover {
+            padding: 40px 25px;
+            background: #FFFFFF;
+            box-shadow: 0px 11.2531px 15.0042px rgba(0, 0, 0, 0.2);
+            border-bottom: 1px solid transparent;
+
+            .vh-organizations__item-title {
+                color: #0B0B92;
+            }
+
+            .vh-organizations__item-user-name {
+                color: #0B0B92;
+            }
+        }
+    }
+
+    &__img {
+        width: 315px;
+        object-fit: cover;
+        height: 215px;
+        margin-right: 25px;
+    }
+
+    &__item-title {
+        max-width: 470px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    &__item-name {
+        font-weight: 500;
+        font-size: 15.0042px;
+        line-height: 26px;
+        color: #4E4E4E;
+    }
+
+    &__item-user-name {
+        font-weight: 600;
+        font-size: 15.0042px;
+        line-height: 19px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vh-organizations {
+
+        &__item {
+            &:hover {
+                padding: 30px 0;
+                box-shadow: 0 0 0 0 transparent;
+            }
+        }
+
+        &__item-title {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .vh-organizations {
+
+        &__img {
+            width: 200px;
+        }
+
+        &__item-title {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .vh-organizations {
+
+        &__list {
+            grid-gap: 40px !important;
+        }
+
+        &__item {
+            padding: 30px 0px 10px 0px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__item + &__item {
+            margin-top: 40px;
+        }
+
+        &__img {
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 15px;
+        }
+
+        &__item-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+}
